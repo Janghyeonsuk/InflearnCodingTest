@@ -1,16 +1,9 @@
 import java.util.Scanner;
 
 public class Main {
-    // 6.중복 문자 제거
     public String solution(String str) {
-        StringBuilder sb = new StringBuilder();
 
-        for (int i = 0; i < str.length(); i++) {
-            if(str.indexOf(str.charAt(i)) == i)
-                sb.append(str.charAt(i));
-        }
-
-        return sb.toString();
+        return "YES";
     }
 
     public static void main(String[] args) {
