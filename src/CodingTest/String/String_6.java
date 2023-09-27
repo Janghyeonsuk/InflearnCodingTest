@@ -1,6 +1,8 @@
+package CodingTest.String;
+
 import java.util.Scanner;
 
-public class Main {
+public class String_6 {
     // 6.중복 문자 제거
     public String solution(String str) {
         StringBuilder sb = new StringBuilder();
@@ -14,7 +16,7 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        Main main = new Main();
+        String_6 main = new String_6();
         Scanner in = new Scanner(System.in);
         String str = in.nextLine();
 
