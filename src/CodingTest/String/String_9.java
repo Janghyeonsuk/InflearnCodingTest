@@ -6,15 +6,23 @@ public class String_9 {
     // 9.숫자만 추출
     public int solution(String str) {
         StringBuilder sb = new StringBuilder();
-        char[] charArray = str.toCharArray();
-        for (char c : charArray) {
-            if (Character.isDigit(c)) {
-                sb.append(c);
-            }
-        }
+        char[] charArr = str.toCharArray();
 
-        int answer = Integer.parseInt(sb.toString());
+        for (char c : charArr) {
+            if (Character.isDigit(c))
+                sb.append(c);
+        }
+        return Integer.parseInt(sb.toString());
+
+        /*
+        int answer = 0;
+        for (char c : charArr) {
+            if (c >= 48 && c <= 57)
+                // 처음 나온 문자열을 10의 자리씩 증가시키며 자연수로 만듦
+                answer = answer * 10 + (c - 48);
+        }
         return answer;
+        */
     }
 
     public static void main(String[] args) {

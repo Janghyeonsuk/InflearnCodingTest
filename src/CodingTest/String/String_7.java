@@ -6,10 +6,10 @@ public class String_7 {
     //7. 회문 문자열
     public String solution(String str) {
         str = str.toUpperCase();
-        char[] charArray = str.toCharArray();
+        char[] charArr = str.toCharArray();
         int lt = 0, rt = str.length() - 1;
         while (lt < rt) {
-            if (charArray[lt] == charArray[rt]) {
+            if (charArr[lt] == charArr[rt]) {
                 lt++;
                 rt--;
             } else

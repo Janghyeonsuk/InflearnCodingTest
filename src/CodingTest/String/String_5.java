@@ -6,21 +6,21 @@ public class String_5 {
     // 5. 특정 문자 뒤집기
     public String solution(String str) {
         String answer = "";
-        char[] charArray = str.toCharArray();
-        int lt = 0, rt = charArray.length - 1;
+        char[] charArr = str.toCharArray();
+        int lt = 0, rt = charArr.length - 1;
 
         while (lt < rt) {
-            if (!Character.isAlphabetic(charArray[lt])) lt++;
-            else if (!Character.isAlphabetic(charArray[rt])) rt--;
+            if (!Character.isAlphabetic(charArr[lt])) lt++;
+            else if (!Character.isAlphabetic(charArr[rt])) rt--;
             else {
-                char tmp = charArray[lt];
-                charArray[lt] = charArray[rt];
-                charArray[rt] = tmp;
+                char tmp = charArr[lt];
+                charArr[lt] = charArr[rt];
+                charArr[rt] = tmp;
                 lt++;
                 rt--;
             }
         }
-        answer = String.valueOf(charArray);
+        answer = String.valueOf(charArr);
 
         return answer;
     }
