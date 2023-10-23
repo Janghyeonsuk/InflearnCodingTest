@@ -3,7 +3,7 @@ package CodingTest.SortingAndSearching;
 import java.util.Scanner;
 
 public class Sorting_3 {
-
+    // 3. 삽입 정렬
     public int[] solution(int n, int[] arr) {
         for (int i = 1; i < n; i++) {
             int tmp = arr[i];
