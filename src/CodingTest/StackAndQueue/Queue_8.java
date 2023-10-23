@@ -38,23 +38,23 @@ public class Queue_8 {
                 if (tmp.id == m)
                     return answer;
             }
-
-
-            return answer;
         }
 
-
-        public static void main (String[]args){
-            Queue_8 main = new Queue_8();
-            Scanner in = new Scanner(System.in);
-            int n = in.nextInt();
-            int m = in.nextInt();
-            int[] arr = new int[n];
-
-            for (int i = 0; i < n; i++) {
-                arr[i] = in.nextInt();
-            }
-
-            System.out.println(main.solution(n, m, arr));
-        }
+        return answer;
     }
+
+
+    public static void main(String[] args) {
+        Queue_8 main = new Queue_8();
+        Scanner in = new Scanner(System.in);
+        int n = in.nextInt();
+        int m = in.nextInt();
+        int[] arr = new int[n];
+
+        for (int i = 0; i < n; i++) {
+            arr[i] = in.nextInt();
+        }
+
+        System.out.println(main.solution(n, m, arr));
+    }
+}
